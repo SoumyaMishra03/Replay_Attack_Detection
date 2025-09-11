@@ -19,6 +19,7 @@ encoder_test/encoded_sdrs/
 encoder_test/converted_htm/
 htm/models/
 visualized_optical_flow/
+pre_processing/
 
 # OS
 .DS_Store
