@@ -7,3 +7,6 @@ This comprises of two main parts, one is pre-processing and the other one is opt
 - `Optical_Visualization`: The visualization pipeline begins by initializing paths to load .npz optical flow files and their corresponding original videos, while creating the `visualized_optical_flow` output directory. It lists all flow files and matches them with the correct video sources. Each video is opened using `cv2.VideoCapture`, and motion vectors are loaded via np.load. Video properties like FPS and resolution are read for setup. An output writer is initialized to save the final .mp4. For each frame, flow vectors are converted to HSV (Hue = direction, Value = magnitude), then to BGR using `cv2.cvtColor`. The flow is blended onto the original frame using `cv2.addWeighted`, displayed live, and saved. Finally, all resources are released.
 
 
+To sum it up the .npz files we obtain by running the pre-processing.py file, the obtained vectors(.npz) files are overlayed over the videos that we have got from UCF Crime data set in 7:3 ratio producing an optically visualized video where the motion is represented using HSV
+
+
