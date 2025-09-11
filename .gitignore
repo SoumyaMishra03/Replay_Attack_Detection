@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# Data and large artifacts
+data/normal_videos/
+data/normal_videos1/
+data/optical_flow_data/
+encoder_test/encoded_sdrs/
+encoder_test/converted_htm/
+htm/models/
+visualized_optical_flow/
+
+# OS
+.DS_Store
+Thumbs.db
